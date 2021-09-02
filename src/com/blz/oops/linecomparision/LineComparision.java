@@ -11,7 +11,7 @@ public class LineComparision {
 		welcome();
 		userInput();
 		distance();
-		equal();
+		compareTo();
 	}
 
 	static void welcome() {
@@ -58,11 +58,13 @@ public class LineComparision {
 		System.out.println("Distance 2 :" + distance2);
 	}
 
-	public static void equal() {
+	public static void compareTo() {
 		if (distance1 == distance2) {
 			System.out.println("Length of two lines are equal");
+		} else if (distance1 > distance2) {
+			System.out.println("Length of line 1 is greater than line 2");
 		} else {
-			System.out.println("Length of two lines are not equal");
+			System.out.println("Length of line 2 is greater than line 1");
 		}
 	}
 }
